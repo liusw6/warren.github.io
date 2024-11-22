@@ -345,7 +345,7 @@
 
 <p>(19)克隆centos1</p>
 <p>如果我们要建几个一样的虚拟机，这个命令，非常有用。</p>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">virt-clone --connect=qemu:<span class="comment">#/system -o centos1 -n centos3 -f /root/centos3.img</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">virt-clone --connect=qemu:#/system -o centos1 -n centos3 -f /root/centos3.img</span><br></pre></td></tr></table></figure>
 
 <h5 id="20-未登录的情况下，查看镜像目录"><a href="#20-未登录的情况下，查看镜像目录" class="headerlink" title="(20)未登录的情况下，查看镜像目录"></a>(20)未登录的情况下，查看镜像目录</h5><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 查看centos.img镜像文件中/home目录</span></span><br><span class="line">virt-ls centos.img /home</span><br><span class="line"><span class="comment"># tank </span></span><br><span class="line"><span class="comment"># mysql</span></span><br></pre></td></tr></table></figure>
 

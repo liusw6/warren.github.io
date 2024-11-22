@@ -241,7 +241,7 @@
 
         <div class="article-content markdown-body">
             <h1 id="CDH集群相关命令"><a href="#CDH集群相关命令" class="headerlink" title="CDH集群相关命令"></a>CDH集群相关命令</h1><p><code>操作集群命令</code></p>
-<h4 id="查看dfs空间"><a href="#查看dfs空间" class="headerlink" title="查看dfs空间"></a>查看dfs空间</h4><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo -u hdfs hadoop fs -<span class="built_in">ls</span> /</span><br><span class="line">hadoop fs -<span class="built_in">ls</span> -R /aa</span><br></pre></td></tr></table></figure>
+<h4 id="查看dfs空间"><a href="#查看dfs空间" class="headerlink" title="查看dfs空间"></a>查看dfs空间</h4><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sudo</span> -u hdfs hadoop fs -<span class="built_in">ls</span> /</span><br><span class="line">hadoop fs -<span class="built_in">ls</span> -R /aa</span><br></pre></td></tr></table></figure>
 
 <h4 id="创建文件夹"><a href="#创建文件夹" class="headerlink" title="创建文件夹"></a>创建文件夹</h4><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hadoop fs -<span class="built_in">mkdir</span> /a</span><br><span class="line">hadoop fs -<span class="built_in">mkdir</span> -p /aa/bb/cc</span><br></pre></td></tr></table></figure>
 

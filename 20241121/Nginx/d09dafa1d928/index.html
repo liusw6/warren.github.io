@@ -270,7 +270,7 @@
 <p>nginx.conf配置</p>
 <figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">server &#123;</span><br><span class="line">	listen	80 ssl;</span><br><span class="line">	listen	www.xxx.com:80; 				<span class="comment">#此处添加你要该链接访问的域名</span></span><br><span class="line">	server_name  www.xxx.com  <span class="built_in">alias</span>  xxx.com.alias;</span><br><span class="line">	error_page 497 https://<span class="variable">$host</span>:8080<span class="variable">$request_uri</span>;		<span class="comment">#此句最关键，重新定义端口</span></span><br><span class="line">	<span class="comment">#error_page 497 https://$http_host$request_uri;		#此句最关键，只是将http改为https，其他不变</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<p>nginx详细功能详见<a target="_blank" rel="noopener" href="https://liusw.top/categories/Nginx/">https://liusw.top/categories/Nginx/</a></p>
+<p>nginx详细功能详见<a class="link"   target="_blank" rel="noopener" href="https://liusw.top/categories/Nginx/" >https://liusw.top/categories/Nginx/<i class="fas fa-external-link-alt"></i></a></p>
 <blockquote>
 <p>The End</p>
 </blockquote>

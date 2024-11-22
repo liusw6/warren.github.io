@@ -240,7 +240,7 @@
         
 
         <div class="article-content markdown-body">
-            <h1 id="CentOS配置硬盘自动挂载"><a href="#CentOS配置硬盘自动挂载" class="headerlink" title="CentOS配置硬盘自动挂载"></a>CentOS配置硬盘自动挂载</h1><h3 id="1-查看Linux硬盘信息"><a href="#1-查看Linux硬盘信息" class="headerlink" title="1.查看Linux硬盘信息"></a>1.查看Linux硬盘信息</h3><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo fdisk -l</span><br></pre></td></tr></table></figure>
+            <h1 id="CentOS配置硬盘自动挂载"><a href="#CentOS配置硬盘自动挂载" class="headerlink" title="CentOS配置硬盘自动挂载"></a>CentOS配置硬盘自动挂载</h1><h3 id="1-查看Linux硬盘信息"><a href="#1-查看Linux硬盘信息" class="headerlink" title="1.查看Linux硬盘信息"></a>1.查看Linux硬盘信息</h3><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sudo</span> fdisk -l</span><br></pre></td></tr></table></figure>
 
 <h3 id="2-格式化新硬盘"><a href="#2-格式化新硬盘" class="headerlink" title="2.格式化新硬盘"></a>2.格式化新硬盘</h3><p>**（很危险，注意操作时确定硬盘分区的位置) **</p>
 <figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 注意文件系统格式：</span></span><br><span class="line"><span class="comment"># 1.文件系统格式xfs</span></span><br><span class="line">mkfs.xfs  /dev/sdb1</span><br><span class="line"></span><br><span class="line"><span class="comment"># 2.文件系统格式ext4</span></span><br><span class="line">mkfs.ext4 /dev/sdb1</span><br></pre></td></tr></table></figure>
